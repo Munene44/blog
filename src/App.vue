@@ -67,5 +67,6 @@
 }
 h1:first-letter, h2:first-letter {
   text-transform:uppercase;
+
 }
 </style>
