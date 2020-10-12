@@ -10,21 +10,19 @@
       </div>
     </div>
 
-    <section v-for="blog in posts">
+    <section  v-bind:key="blog" v-for="blog in posts">
       <h2>{{ blog.title }}</h2>
       <hr>
     </section>
+    
 
-    <footer class="col-sm-12">
-      <hr>
-      <p class="text-center"><ahref="http://www.peterstehlik.com"target="_blank">Peter Stehlík</a>&copy; 2018 </p>
-    </footer>
+   
   </div>
 </div>
 </template>
 
 <script>
-exportdefault {
+export default {
   data() {
     return {
       posts: [],
@@ -39,13 +37,6 @@ exportdefault {
 }
 </script>
 
-export default {
-  name: 'App',
-  components: {
-    
-  }
-}
-</script>
 
 <style>
 #app {
